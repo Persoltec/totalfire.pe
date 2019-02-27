@@ -226,7 +226,7 @@ class Header extends React.Component {
                       <StaticQuery
                         query={graphql`
                           query {
-                            allCockpitTotalstopfire(
+                            allCockpitCorporacion(
                               filter: {
                                 cockpitId: { eq: "5c64868e326263101b0000f8" }
                                 lang: { eq: "es" }
@@ -246,7 +246,7 @@ class Header extends React.Component {
                         `}
                         render={data => (
                           <div className="widget-social-links">
-                            {data.allCockpitTotalstopfire.edges.map(
+                            {data.allCockpitCorporacion.edges.map(
                               (items, i) => {
                                 let fono = "";
 
