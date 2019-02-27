@@ -36,7 +36,7 @@ class OfficeHours extends React.Component {
         `}
         render={data => (
           <div className="widget-office-hours">
-            {data.allCockpitTotalstopfire.edges.map((items, i) => {
+            {data.allCockpitCorporacion.edges.map((items, i) => {
               return (
                 <React.Fragment>
                   {items.node.contenido.value.parsed.map((item, i) => {

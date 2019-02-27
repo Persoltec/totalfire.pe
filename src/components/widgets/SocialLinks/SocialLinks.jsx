@@ -31,7 +31,7 @@ class SocialLinks extends React.Component {
         `}
         render={data => (
           <div className="widget-social-links">
-            {data.allCockpitTotalstopfire.edges.map((items, i) => {
+            {data.allCockpitCorporacion.edges.map((items, i) => {
               return (
                 <React.Fragment>
                   {items.node.contenido.value.parsed.map((item, i) => {

@@ -44,7 +44,7 @@ class AboutUs extends React.Component {
         `}
         render={data => (
           <div className="widget-social-links">
-            {data.allCockpitTotalstopfire.edges.map((items, i) => {
+            {data.allCockpitCorporacion.edges.map((items, i) => {
               return (
                 <React.Fragment>
                   <div className="title">

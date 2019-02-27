@@ -43,7 +43,7 @@ class ContactInfo extends React.Component {
         `}
         render={data => (
           <div className={`${name ? name : " widget-contact-info"}`}>
-            {data.allCockpitTotalstopfire.edges.map((items, i) => {
+            {data.allCockpitCorporacion.edges.map((items, i) => {
               var icono = {
                 Dirección: ic_location_on,
                 Móvil: ic_phone,
