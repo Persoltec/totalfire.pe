@@ -8,7 +8,7 @@ import "rc-drawer/assets/index.css";
 import HomeSlider from "../../slider/HomeSlider";
 import { Link } from "gatsby";
 //import Logo from "../Logo/Logo.jsx";
-import logo from "../../../img/logo.svg";
+import logo from "../../../img/logo.png";
 import { StaticQuery, graphql } from "gatsby";
 
 import { ic_phone_in_talk } from "react-icons-kit/md/ic_phone_in_talk";

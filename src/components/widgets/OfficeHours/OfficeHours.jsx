@@ -11,7 +11,7 @@ class OfficeHours extends React.Component {
       <StaticQuery
         query={graphql`
           query {
-            allCockpitTotalstopfire(
+            allCockpitCorporacion(
               filter: {
                 cockpitId: { eq: "5c64355d32626302d90003e2" }
                 lang: { eq: "es" }

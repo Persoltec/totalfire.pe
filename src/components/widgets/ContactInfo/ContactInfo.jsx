@@ -18,7 +18,7 @@ class ContactInfo extends React.Component {
       <StaticQuery
         query={graphql`
           query {
-            allCockpitTotalstopfire(
+            allCockpitCorporacion(
               filter: {
                 cockpitId: { eq: "5c64868e326263101b0000f8" }
                 lang: { eq: "es" }

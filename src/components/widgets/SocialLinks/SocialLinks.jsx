@@ -8,7 +8,7 @@ class SocialLinks extends React.Component {
       <StaticQuery
         query={graphql`
           query {
-            allCockpitTotalstopfire(
+            allCockpitCorporacion(
               filter: {
                 cockpitId: { eq: "5c6460f53262630b3b0002a9" }
                 lang: { eq: "es" }
