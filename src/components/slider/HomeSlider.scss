@@ -1,0 +1,25 @@
+.slider.inicio {
+  .slider-control-centerleft a,
+  .slider-control-centerright a {
+    background: #1f0f0f75;
+    border: none;
+    color: white;
+    padding: 20px 5px;
+  }
+  .slider-control-centerleft a {
+    margin-left: 20px;
+  }
+  .slider-control-centerright a {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slider.inicio {
+    .slider-control-centerleft,
+    .slider-control-centerright,
+    .slider-control-bottomcenter {
+      display: none;
+    }
+  }
+}

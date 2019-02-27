@@ -1,0 +1,42 @@
+.widget-office-hours {
+  .level {
+    margin: 0;
+    padding: 8px 20px;
+    position: relative;
+    &:before {
+      content: "-";
+      font-weight: 500;
+      position: absolute;
+      left: 0px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: rgba($primary, 0.8);
+    }
+    &:nth-child(odd) {
+      background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 30%,
+        rgba(151, 156, 165, 0.19) 100%
+      );
+    }
+    .level-right {
+      font-size: 12px;
+    }
+  }
+  .hour {
+    color: $primary;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .widget-office-hours {
+    .level {
+      display: flex;
+
+      .level-left + .level-right {
+        margin-top: 0px;
+      }
+    }
+  }
+}

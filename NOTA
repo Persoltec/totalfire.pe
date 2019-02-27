@@ -1,0 +1,8 @@
+Complementos (onchange,prettier)
+
+--->Busca todo y lo pone bonito
+prettier --write src/**/*.{js,jsx,css,scss}
+--->Observa los cambios(Archivos) y lo pone bonito
+ onchange src/**/*.{js,jsx,css,scss} -- prettier --write {{changed}}
+--->Comando abreviado en package.json
+"formatear": "onchange 'src/**/*.{js,jsx,css,scss}' -- prettier --write {{changed}}"

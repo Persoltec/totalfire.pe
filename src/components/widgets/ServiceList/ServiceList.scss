@@ -1,0 +1,19 @@
+.widget-service-list {
+  .box {
+    padding: 0px;
+    border-radius: 4px;
+    .media-content {
+      margin-top: 1rem;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .widget-service-list {
+    .box {
+      .media-content {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}

@@ -1,46 +1,61 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import { StaticQuery, graphql } from "gatsby"
+import React from "react";
+import Helmet from "react-helmet";
+// import { StaticQuery, graphql } from "gatsby"
 
-import Navbar from '../components/Navbar'
-import './all.sass'
+import { enquireScreen } from "enquire-js";
 
-const TemplateWrapper = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query HeadingQuery {
-          site {
-            siteMetadata {
-              title,
-              description,
-            }
-          }
-        }
-    `}
-    render={data => (
-      <div>
-        <Helmet>
-          <html lang="en" />
-          <title>{data.site.siteMetadata.title}</title>
-          <meta name="description" content={data.site.siteMetadata.description} />
-          
-          <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
-	        <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" />
-	        <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" />
-	
-	        <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ff4400" />
-	        <meta name="theme-color" content="#fff" />
+import Footer from "./layout/Footer/Footer";
+import Header from "./layout/Header/Header";
+import Sidebar from "./layout/Sidebar/Sidebar";
+import BackToTop from "./layout/BackToTop/BackToTop";
 
-	        <meta property="og:type" content="business.business" />
-          <meta property="og:title" content={data.site.siteMetadata.title} />
-          <meta property="og:url" content="/" />
-          <meta property="og:image" content="/img/og-image.jpg" />
-        </Helmet>
-        <Navbar />
-        <div>{children}</div>
+import "typeface-roboto";
+import "typeface-oswald";
+
+import "../style.scss";
+
+class Layout extends React.PureComponent {
+  constructor(props) {
+    super(props);
+  }
+
+  componentDidMount() {}
+
+  render() {
+    const children = this.props.children;
+    const full = this.props.full;
+    const titulo = this.props.titulo;
+
+    return (
+      <div id="pagina">
+        <Helmet
+          script={[
+            { src: "https://smtpjs.com/v3/smtp.js", type: "text/javascript" }
+          ]}
+        />
+        <Header titulo={titulo} />
+
+        {full ? (
+          <div id="contenido">{children}</div>
+        ) : (
+          <section class="section">
+            <div class="container">
+              <div className="columns is-variable bd-klmn-columns is-6 invert">
+                <div className="column is-3">
+                  <Sidebar />
+                </div>
+                <div className="column is-9">{children}</div>
+              </div>
+            </div>
+          </section>
+        )}
+
+        <Footer />
+
+        <BackToTop />
       </div>
-    )}
-  />
-)
+    );
+  }
+}
 
-export default TemplateWrapper
+export default Layout;

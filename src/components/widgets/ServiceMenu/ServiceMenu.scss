@@ -1,0 +1,21 @@
+.widget-service-menu {
+  .items a {
+    padding: 5px 0px;
+    display: block;
+  }
+  .media {
+    border: 1px solid $grey-lighter;
+    &:hover {
+      border: 1px solid $primary;
+    }
+    .title {
+      margin-bottom: 0px;
+      line-height: 48px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .widget-service-menu {
+  }
+}
