@@ -160,7 +160,7 @@ class Header extends React.Component {
             >
               <div class="container">
                 <div class="navbar-brand">
-                  <Link className="navbar-item" to="/">
+                  <Link className="navbar-item logo" to="/">
                     <img src={logo} />
                   </Link>
 
