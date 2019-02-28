@@ -69,7 +69,7 @@ module.exports = {
     options: {
       token: 'account-1111399883d400b3ee2d0af9246ad3',
       baseUrl:
-        'http://totalstopfireperu.000webhostapp.com', // (1)
+        'http://35.198.28.215/totalstopfire', // (1)
       locales: ['any', 'es'], // (2)
     },
   },
