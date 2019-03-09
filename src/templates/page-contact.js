@@ -44,6 +44,7 @@ const DefaultContactenos = ({ data }) => {
         title={valor(post, "titulo")}
         content={valor(post, "contenido")}
       />
+      
     </Layout>
   );
 };

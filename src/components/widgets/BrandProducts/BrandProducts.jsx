@@ -66,7 +66,7 @@ class BrandProducts extends React.Component {
         `}
         render={data => {
           return (
-            <section class="widget-brand-products section">
+            <section class="widget-brand-products section fondo-white">
               <div class="container">
                 <div className="titulo has-text-centered">
                   <h1 name="image" className="title">

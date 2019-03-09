@@ -8,12 +8,15 @@ $kaldi-red-invert: #fff;
 $primary-invert: $kaldi-red-invert;
 
 //Configuracion de Colores
-
-$primary: #e24b12;
+$grey-dark:#002e5b;
+$dark:#002e5b;
+$primary: #ff470f;
 $light: #d4dae3;
 
 $link: $primary !default;
+
 $body-color: $grey-dark;
+
 
 $family-primary: "Roboto";
 $body-size: 14px;
@@ -45,6 +48,17 @@ $weight-normal: 400;
 @import "components/widgets/ServiceList/ServiceList";
 @import "components/widgets/AboutUs/AboutUs";
 @import "components/widgets/EnterpriseFeature/EnterpriseFeature";
+@import "components/widgets/AdBar/AdBar";
+
+
+.fondo-white{
+  background: url("./img/fondo-white.png");
+}
+
+.is-vertical-center {
+  display: flex;
+  align-items: center;
+}
 
 @media (max-width: 767px) {
   .invert {

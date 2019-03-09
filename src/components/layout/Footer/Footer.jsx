@@ -1,7 +1,7 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 
-import logo from "../../../img/logo.png";
+import logo from "../../../img/logo-invert.png";
 import OfficeHours from "../../widgets/OfficeHours/OfficeHours.jsx";
 import ContactInfo from "../../widgets/ContactInfo/ContactInfo.jsx";
 import SocialLinks from "../../widgets/SocialLinks/SocialLinks.jsx";

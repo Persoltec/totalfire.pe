@@ -1,18 +1,24 @@
 .footer {
-  background: #191d26;
+  background: $dark;
 
   background-image: url("./img/map.png");
   background-position: 40% center;
   background-repeat: no-repeat;
   background-size: auto;
-
+    padding: 3rem 1.5rem 2rem;
   .container {
-    padding-top: 40px;
+    padding-top: 0px;
   }
 }
 .copyright {
-  background: #11141a;
+  color:$light;
+  background: darken( $dark, 0% );
   padding: 20px 0px;
+.container {
+      border-top: 1px solid rgba($light,0.5);
+    padding-top: 20px;
+}
+
   section {
     padding-top: 0px;
     padding-bottom: 0px;

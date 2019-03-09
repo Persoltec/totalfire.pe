@@ -8,7 +8,7 @@ import Footer from "./layout/Footer/Footer";
 import Header from "./layout/Header/Header";
 import Sidebar from "./layout/Sidebar/Sidebar";
 import BackToTop from "./layout/BackToTop/BackToTop";
-
+import { StickyContainer, Sticky } from 'react-sticky';
 import "typeface-roboto";
 import "typeface-oswald";
 
@@ -27,6 +27,9 @@ class Layout extends React.PureComponent {
     const titulo = this.props.titulo;
 
     return (
+       <StickyContainer className="">
+
+
       <div id="pagina">
         <Helmet
           script={[
@@ -54,6 +57,7 @@ class Layout extends React.PureComponent {
 
         <BackToTop />
       </div>
+         </StickyContainer>
     );
   }
 }

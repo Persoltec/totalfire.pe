@@ -1,3 +1,9 @@
+@import "style-1/style";
+
+
+
+
+
 .navbar-item.logo{
   background: white;
 }
@@ -30,13 +36,13 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: #373a47;
+  background: $dark;
   padding: 2em 1em 0;
   font-size: 1em;
   //background-image: linear-gradient(45deg, #001529 0%,   rgba( $primary, .2 ) 0%, #001529 80%);
-  background-image: linear-gradient(141deg,#1f191a 0%, 71%,rgba( $primary, .2 ) 100%);
+  background-image: linear-gradient(141deg,#1f191argba( $dark, 1 ) 0%, 71%,rgba( $primary, .2 ) 100%);
   .menu-item {
-    color: $text-light;
+    color: $light;
     padding: 0.8em 0.75em;
   }
 }
@@ -87,7 +93,8 @@ Note: Beware of modifying this element as it can break the animations - you shou
     );
 
     &::before {
-      background: url("./img/MapPixel.svg");
+      background: url("./img/FondoSlider.png");
+
       content: "";
       width: 100%;
       height: 100%;
@@ -109,7 +116,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
     padding-top: 10rem !important;
   }
 
-  nav.navbar {
+  nav.navbar1 {
     transition: all 0.4s ease;
     height: 80px;
     background: rgba($black, 0.4) !important;
@@ -167,7 +174,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
       display: none !important;
     }
     .itemslider {
-      height: 100vh !important;
+      height:  calc(100vh - 120px) !important;
       .gatsby-image-wrapper {
         height: 100%;
 
@@ -186,22 +193,21 @@ Note: Beware of modifying this element as it can break the animations - you shou
   }
 }
 
+
+ 
 @media screen and (max-width: 767px) {
   .header {
-    .slider {
-      .slider-control-centerleft {
-        top: 80% !important;
-        a {
-          background: transparent !important;
-        }
-      }
-      .slider-control-centerright {
-        top: 80% !important;
-        a {
-          background: transparent !important;
-        }
-      }
+
+
+  .slick-slider {
+    .itemslider {
+      height:  calc(100vh - 50px) !important;
     }
+  }
+
+
+
+ 
     nav.navbar {
       height: 50px !important;
       .navbar-burger.burger {

@@ -46,8 +46,8 @@ class ContactInfo extends React.Component {
             {data.allCockpitCorporacion.edges.map((items, i) => {
               var icono = {
                 Dirección: ic_location_on,
-                Móvil: ic_phone,
-                Teléfono: ic_stay_current_portrait,
+                Móvil: ic_stay_current_portrait,
+                Teléfono: ic_phone,
                 Correo: ic_mail
               };
 
