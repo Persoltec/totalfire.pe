@@ -19,6 +19,7 @@ import MenuInline from "../component/menu-inline.jsx";
 import Phone from "../component/phone.jsx";
 import Mobile from "../component/mobile.jsx";
 import Mail from "../component/email.jsx";
+import Portada from "../component/Portada.jsx";
 import Img from "gatsby-image";
 
 class Header extends React.Component {
@@ -307,7 +308,8 @@ class Header extends React.Component {
         Subtitle
       </h2>
     </div>
-     <img class ="portada" src={portada} />
+    <Portada/>
+      
   </div>
 
 
