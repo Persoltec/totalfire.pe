@@ -159,34 +159,7 @@ class Header extends React.Component {
           } is-light is-bold header`}
         >
           {titulo && (
-            <StaticQuery
-              query={graphql`
-                query {
-                  allFile(filter: { name: { eq: "cabecera" } }) {
-                    edges {
-                      node {
-                        childImageSharp {
-                          fluid(maxWidth: 800, quality: 50, toFormat: JPG) {
-                            ...GatsbyImageSharpFluid
-                          }
-                        }
-                      }
-                    }
-                  }
-                }
-              `}
-              render={data => (
-                <React.Fragment>
-                  {data.allFile.edges.map((items, i) => {
-                    return (
-                      <React.Fragment>
-                        <Img fluid={items.node.childImageSharp.fluid} />
-                      </React.Fragment>
-                    );
-                  })}
-                </React.Fragment>
-              )}
-            />
+            <Portada/>
           )}
 
           <div class="hero-head">
