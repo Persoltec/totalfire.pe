@@ -26,7 +26,7 @@ class Portada extends React.Component {
                     edges {
                       node {
                         childImageSharp {
-                          fluid(maxWidth: 800, quality: 50, toFormat: JPG) {
+                          fluid(quality: 80, toFormat: JPG) {
                             ...GatsbyImageSharpFluid
                           }
                         }

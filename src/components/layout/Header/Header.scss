@@ -111,10 +111,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
     }
   }
 
-  .hero-body {
-    padding-bottom: 6rem !important;
-    padding-top: 10rem !important;
-  }
+ 
 
   nav.navbar1 {
     transition: all 0.4s ease;
@@ -198,6 +195,10 @@ Note: Beware of modifying this element as it can break the animations - you shou
 @media screen and (max-width: 767px) {
   .header {
 
+  &::after {
+    content: none;
+    
+  }
 
   .slick-slider {
     .itemslider {
@@ -229,9 +230,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
     &.hero.is-medium {
       min-height: 250px;
     }
-    .hero-body {
-      padding-bottom: 6rem !important;
-      padding-top: 8rem !important;
-    }
+ 
   }
 }

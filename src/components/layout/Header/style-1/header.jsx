@@ -1,7 +1,7 @@
 import React from "react";
 import { findDOMNode } from "react-dom";
 import { Icon } from "react-icons-kit";
-
+import {ic_keyboard_arrow_right} from 'react-icons-kit/md/ic_keyboard_arrow_right'
 //import VisibilitySensor from "react-visibility-sensor";
 import { StickyContainer, Sticky } from "react-sticky";
 import HomeSlider from "../../../slider/HomeSlider";
@@ -156,7 +156,7 @@ class Header extends React.Component {
           id="header"
           className={`hero ${
             titulo ? " is-medium" : " is-fullheight"
-          } is-dark is-bold header`}
+          } is-light is-bold header`}
         >
           {titulo && (
             <StaticQuery
@@ -261,7 +261,7 @@ class Header extends React.Component {
 
                     <div
                       id="navMenu"
-                      class="navbar-menu has-text-centered-touch"
+                      class="navbar-menu has-text-weight-semibold"
                     >
                       <div class="navbar-end">
                         <MenuInline />
@@ -300,14 +300,21 @@ class Header extends React.Component {
       {/*    {!titulo1 && <HomeSlider />}*/}
           {!titulo && (
 <div class="hero-body">
-    <div class="container has-text-centered">
-      <h1 class="title">
-        Title
+    <div class="container has-text-left">
+  <div className="content-info">
+
+    <h1 class="title  is-size-1-desktop is-size-2-tablet is-size-3-mobile">
+        Seguridad contra incendio
       </h1>
       <h2 class="subtitle">
-        Subtitle
+        Total Fire se ha ganado una excelente reputación por su calidad, fiabilidad y valor dentro de la industria de la seguridad contra incendios a nivel comercial e industrial.
       </h2>
-    </div>
+<a class="button is-dark has-text-weight-semibold" >Contactános<Icon className="has-text-primary" size={24} icon={ic_keyboard_arrow_right} /></a>
+<a class="button is-primary has-text-weight-semibold has-text-dark" >Brochure<Icon className="has-text-dark" size={24} icon={ic_keyboard_arrow_right} /></a>
+
+
+                            </div>
+                            </div>
     <Portada/>
       
   </div>
