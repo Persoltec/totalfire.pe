@@ -7,9 +7,15 @@ import SVG from "react-inlinesvg";
 import { valor } from "../../../tool/funciones";
 
 class EnterpriseFeature extends React.Component {
+
+  state = {
+    device: 'mobile'
+  };
+
   render() {
     const { ...props } = this.props;
     const { isMobile } = props;
+    const { device } = this.state;
 
     delete props.isMobile;
 
@@ -41,11 +47,14 @@ class EnterpriseFeature extends React.Component {
           let color = ["rojo", "negro", "blanco"];
           let n = 0;
           return (
-            <Media query="(max-width: 599px)">
-              {matches =>
-                matches ? (
-                  <React.Fragment>
-                    <div className="widget-enterprise-feature movil">
+
+     <React.Fragment>
+  <Media
+    query="(max-width: 600px)"
+    defaultMatches={device === 'mobile'}
+    render={() => (
+
+      <div className="widget-enterprise-feature movil">
                       <Title/>
                           {data.allCockpitOfrecemos.edges.map((items, i) => {
                             let setColor = color[n];
@@ -83,10 +92,16 @@ class EnterpriseFeature extends React.Component {
                           })}
                      
                     </div>
-                  </React.Fragment>
-                ) : (
-                  <React.Fragment>
-                    <div className="widget-enterprise-feature ">
+
+      )}
+  />
+
+  <Media
+    query="(min-width: 601px)"
+    defaultMatches={device === 'desktop'}
+    render={() => (
+
+<div className="widget-enterprise-feature ">
                      <Title/>
                       <div class="tile   has-text-centered">
                         <div class="tile is-horizontal">
@@ -130,10 +145,12 @@ class EnterpriseFeature extends React.Component {
                         </div>
                       </div>
                     </div>
-                  </React.Fragment>
-                )
-              }
-            </Media>
+
+      )}
+  />
+     </React.Fragment>
+
+
           );
         }}
       />
