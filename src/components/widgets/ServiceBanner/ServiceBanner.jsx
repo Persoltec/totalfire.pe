@@ -3,6 +3,7 @@ import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 import { Icon } from "react-icons-kit";
 
+import {ic_keyboard_arrow_right} from 'react-icons-kit/md/ic_keyboard_arrow_right'
 import { ic_location_on } from "react-icons-kit/md/ic_location_on";
 import { Link } from "gatsby";
 import Title from "../Title/Title";
@@ -117,7 +118,7 @@ class ServiceBanner extends React.Component {
       {item.node.descripcion.value}
       
       <br/>
-      <a className="has-text-primary" href="#">#responsive</a>
+      <Link className="has-text-primary has-text-weight-semibold" to={slug}>Saber más <Icon className="" size={24} icon={ic_keyboard_arrow_right} /></Link>
     </div>
   </div>
 </div>

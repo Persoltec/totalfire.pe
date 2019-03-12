@@ -1,23 +1,20 @@
 .widget-service-banner {
 	padding: 40px 0px;
 	.slick-slider {
-		.slick-next {
+		.slick-next,
+		.slick-prev {
 			right: 5px;
-			top: 0px;
+			top: -3px;
 			transform: translate(0, -100%);
-			&:before{
+			left: inherit;
+			&:before {
 				color: $dark;
 			}
 		}
 
 		.slick-prev {
-    top: 0px;
-    right: 35px;
-    transform: translate(0, -100%);
-    &:before{
-				color: $dark;
-			}
-}
+			right: 35px;
+		}
 
 		.item-slider {
 			padding: 10px;
@@ -56,18 +53,18 @@
 @media screen and (max-width: 767px) {
 	.widget-service-banner {
 		padding: 40px 0px;
-			.slick-slider {
-		.item-slider {
-			padding: 0px;
-			.card {
-				max-height: 160px;
-				.card-content {
-					top: 0px;
+		.slick-slider {
+			.item-slider {
+				padding: 0px;
+				.card {
+					max-height: 160px;
+					.card-content {
+						top: 0px;
 
-					transition: all 0.3s ease;
+						transition: all 0.3s ease;
+					}
 				}
 			}
-		}
 		}
 	}
 }
