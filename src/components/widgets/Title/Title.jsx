@@ -20,8 +20,8 @@ class Title extends React.Component {
 
     return (
    <div className="widget-title">
-      <h2 className="subtitle is-6"> VENTA Y RECARGA DE EXTINTORES EN LIMA</h2>
-      <h1 className="title is-3 is-spaced ">EXTINTORES <span class="has-text-primary">MULTIPROPOSITOS</span></h1>
+      <h2 className="subtitle is-size-6-desktop is-size-7-touch"> VENTA Y RECARGA DE EXTINTORES EN LIMA</h2>
+      <h1 className="title is-size-3-desktop is-size-4-touch is-spaced ">EXTINTORES <span class="has-text-primary">MULTIPROPOSITOS</span></h1>
       <img className="title-separator" src={TitleSeparator} alt="separador total fire"/>
       <p>Vendemos y recargamos extintores contra incendios, llenado con agente extintor garantizado.</p>
     </div>

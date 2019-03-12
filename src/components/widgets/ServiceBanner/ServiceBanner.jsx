@@ -109,7 +109,7 @@ class ServiceBanner extends React.Component {
         </figure>
       </div>
       <div class="media-content">
-        <p class="title is-4 has-text-light">{item.node.titulo.value}</p>
+        <p class="title is-4 has-text-white">{item.node.titulo.value}</p>
       </div>
     </div>
 
