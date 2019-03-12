@@ -2,8 +2,9 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
-import { Icon } from "react-icons-kit";
+//import { Icon } from "react-icons-kit";
 import { Link } from "gatsby";
+//import Title from "../Title/Title";
 
 import { slugify } from "../../../tool/funciones";
 
@@ -15,10 +16,10 @@ class ServiceList extends React.Component {
   componentDidMount() {}
 
   render() {
-    const { ...props } = this.props;
-    const { Titulo, mini } = props;
-    delete props.Titulo;
-    delete props.mini;
+    // const { ...props } = this.props;
+    // const { Titulo, mini } = props;
+    // delete props.Titulo;
+    // delete props.mini;
 
     return (
       <StaticQuery
@@ -49,8 +50,12 @@ class ServiceList extends React.Component {
           }
         `}
         render={data => {
-          const Items = (
-            <div className="columns is-multiline">
+      
+
+          return (
+            <React.Fragment>
+            
+                      <div className="columns is-multiline">
               {data.allCockpitServicios.edges.map((item, i) => {
                 let slug = "servicios/" + slugify(item.node.titulo.value);
 
@@ -91,26 +96,8 @@ class ServiceList extends React.Component {
                 );
               })}
             </div>
-          );
 
-          return (
-            <React.Fragment>
-              {mini ? (
-                <div className="widget-service-list">{Items}</div>
-              ) : (
-                <section class="widget-service-list section">
-                  <div class="container">
-                    <div className="titulo has-text-centered">
-                      <h1 name="image" className="title">
-                        Nuestros Servicios
-                      </h1>
 
-                      <h2 className="subtitle">{Titulo}</h2>
-                    </div>
-                    {Items}
-                  </div>
-                </section>
-              )}
             </React.Fragment>
           );
         }}

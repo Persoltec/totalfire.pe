@@ -1,0 +1,26 @@
+.widget-title {
+
+    padding: 20px 0;
+  text-align: center;
+
+  .title {
+        margin-bottom: 0px;
+  }
+
+  .title-separator {
+    
+      
+        margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+  }
+
+  .content {
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .widget-title {
+  }
+}

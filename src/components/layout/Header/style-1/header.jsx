@@ -174,13 +174,13 @@ class Header extends React.Component {
                       class="navbar-item is-active has-background-primary"
                       href="#"
                     >
-                      Popular
+                      Catálogo
                     </a>
                     <a class="navbar-item" href="#">
-                      Recent
+                      Brochure
                     </a>
                     <a class="navbar-item" href="#">
-                      Rising
+                      Personal
                     </a>
                   </div>
                   <div class="navbar-end">
@@ -276,14 +276,14 @@ class Header extends React.Component {
     <div class="container has-text-left">
   <div className="content-info">
 
-    <h1 class="title  is-size-1-desktop is-size-2-tablet is-size-3-mobile">
+    <h1 class="title  is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile">
         Seguridad contra incendio
       </h1>
-      <h2 class="subtitle">
+      <h2 class="subtitle ">
         Total Fire se ha ganado una excelente reputación por su calidad, fiabilidad y valor dentro de la industria de la seguridad contra incendios a nivel comercial e industrial.
       </h2>
 <a class="button is-dark has-text-weight-semibold" >Contactános<Icon className="has-text-primary" size={24} icon={ic_keyboard_arrow_right} /></a>
-<a class="button is-primary has-text-weight-semibold has-text-dark" >Brochure<Icon className="has-text-dark" size={24} icon={ic_keyboard_arrow_right} /></a>
+<a class="button is-primary has-text-weight-semibold " >Brochure<Icon className="has-text-dark" size={24} icon={ic_keyboard_arrow_right} /></a>
 
 
                             </div>

@@ -7,6 +7,7 @@ import EnterpriseFeature from "../components/widgets/EnterpriseFeature/Enterpris
 
 import ServiceList from "../components/widgets/ServiceList/ServiceList";
 import AdBar from "../components/widgets/AdBar/AdBar";
+import ServiceBanner from "../components/widgets/ServiceBanner/ServiceBanner";
 
 export default class IndexPage extends React.Component {
   constructor(props) {
@@ -18,7 +19,7 @@ export default class IndexPage extends React.Component {
   render() {
     return (
       <Layout full>
-        <ServiceList />
+        <ServiceBanner />
         <EnterpriseFeature />
         <BrandProducts Titulo="Marcas líderes" />
         <AdBar title="Tu vida y empresa están en riesgo. No juegues con fuego." buttom="Contactános" url="fgdfgdfgdf" />

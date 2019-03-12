@@ -2,7 +2,7 @@ import React from "react";
 import { StaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
-import { Icon } from "react-icons-kit";
+//import { Icon } from "react-icons-kit";
 import { Link } from "gatsby";
 
 import { slugify } from "../../../tool/funciones";
@@ -15,9 +15,9 @@ class ServiceMenu extends React.Component {
   componentDidMount() {}
 
   render() {
-    const { ...props } = this.props;
-    const { Titulo } = props;
-    delete props.Titulo;
+    // const { ...props } = this.props;
+    // const { Titulo } = props;
+    // delete props.Titulo;
 
     return (
       <StaticQuery

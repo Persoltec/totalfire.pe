@@ -3,17 +3,17 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
-import Img from "gatsby-image";
+//import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+//import Img from "gatsby-image";
 import { valor } from "../tool/funciones";
-import ServiceList from "../components/widgets/ServiceList/ServiceList";
-import ContactForm from "../components/widgets/ContactForm/ContactForm";
+//import ServiceList from "../components/widgets/ServiceList/ServiceList";
+
 import EnterpriseFeature from "../components/widgets/EnterpriseFeature/EnterpriseFeature";
 
 export const DefaultContactenosTemplate = ({
   title,
   content,
-  contentComponent
+  contentComponent 
 }) => {
   const PageContent = contentComponent || Content;
 
@@ -22,7 +22,7 @@ export const DefaultContactenosTemplate = ({
       <PageContent className="content " content={content} />
 
       <br />
-      <ContactForm />
+
       <EnterpriseFeature />
     </React.Fragment>
   );

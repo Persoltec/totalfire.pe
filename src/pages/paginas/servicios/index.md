@@ -1,6 +1,0 @@
----
-templateKey: 'page-service'
-path: /pagina/servicios
-title: Servicios
----
-Muy lejos, más allá de las montañas de palabras, alejados de los países de las vocales y las consonantes, viven los textos simulados. Viven aislados en casas de letras, en la costa de la semántica, un gran océano de lenguas.

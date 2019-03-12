@@ -3,8 +3,8 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
-import Img from "gatsby-image";
+//import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+//import Img from "gatsby-image";
 import { valor } from "../tool/funciones";
 
 export const DefaultPaginaTemplate = ({ title, content, contentComponent }) => {

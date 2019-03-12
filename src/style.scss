@@ -30,8 +30,8 @@ $weight-normal: 400;
 .content h3,
 .content h4 {
   font-family: "Oswald";
-}
-
+} 
+  
 @import "components/layout/Header/Header";
 @import "components/layout/Footer/Footer";
 @import "components/slider/HomeSlider";
@@ -39,7 +39,6 @@ $weight-normal: 400;
 @import "components/layout/Sidebar/Sidebar";
 @import "components/widgets/OfficeHours/OfficeHours";
 @import "components/widgets/ContactInfo/ContactInfo";
-@import "components/widgets/ContactForm/ContactForm";
 @import "components/widgets/ServiceMenu/ServiceMenu";
 //@import '/components/widgets/LocationCompany/LocationCompany';
 @import "components/layout/BackToTop/BackToTop";
@@ -49,6 +48,12 @@ $weight-normal: 400;
 @import "components/widgets/AboutUs/AboutUs";
 @import "components/widgets/EnterpriseFeature/EnterpriseFeature";
 @import "components/widgets/AdBar/AdBar";
+@import "components/widgets/ServiceBanner/ServiceBanner";
+@import "components/widgets/Title/Title";
+
+
+
+
 
 
 .fondo-white{
