@@ -15,7 +15,10 @@ var settings = {
   infinite: true,
   speed: 500,
   slidesToShow: 3,
-  slidesToScroll:3 ,
+  slidesToScroll:1,
+  autoplay: true,
+  speed: 500,
+  autoplaySpeed: 2000,
   responsive: [
     {
       breakpoint: 600,
@@ -23,7 +26,9 @@ var settings = {
         slidesToShow: 1,
         slidesToScroll: 1,
         infinite: true,
-        dots: true
+        dots: true,
+        rows: 2,
+        slidesPerRow: 1,
       }
     }
   ]
