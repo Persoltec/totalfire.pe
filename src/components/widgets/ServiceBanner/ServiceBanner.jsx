@@ -16,7 +16,7 @@ var settings = {
   speed: 500,
   slidesToShow: 3,
   slidesToScroll:1,
-  autoplay: true,
+  autoplay: false,
   speed: 500,
   autoplaySpeed: 2000,
   responsive: [
