@@ -1,10 +1,18 @@
 import React from "react";
 import { StaticQuery, graphql } from "gatsby";
-import Media from "react-media";
+//import Media from "react-media";
 import Img from "gatsby-image";
 import Title from "../Title/Title";
 import SVG from "react-inlinesvg";
 import { valor } from "../../../tool/funciones";
+import Responsive from 'react-responsive';
+
+const Desktop = props => <Responsive {...props} minWidth={992} />;
+const Tablet = props => <Responsive {...props} minWidth={768} maxWidth={991} />;
+const Mobile = props => <Responsive {...props} maxWidth={767} />;
+const Default = props => <Responsive {...props} minWidth={768} />;
+
+
 
 class EnterpriseFeature extends React.Component {
 
@@ -49,12 +57,10 @@ class EnterpriseFeature extends React.Component {
           return (
 
      <React.Fragment>
-  <Media
-    query="(max-width: 767px)"
-    defaultMatches={device === 'mobile'}
-    render={() => (
 
-      <div className="widget-enterprise-feature movil">
+<Mobile>
+  
+ <div className="widget-enterprise-feature movil">
                       <Title/>
                           {data.allCockpitOfrecemos.edges.map((items, i) => {
                             let setColor = color[n];
@@ -93,14 +99,11 @@ class EnterpriseFeature extends React.Component {
                      
                     </div>
 
-      )}
-  />
+</Mobile>
 
-  <Media
-    query="(min-width: 768px)"
-    defaultMatches={device === 'desktop'}
-    render={() => (
 
+ <Default>
+   
 <div className="widget-enterprise-feature ">
                      <Title/>
                       <div class="tile   has-text-centered">
@@ -146,8 +149,10 @@ class EnterpriseFeature extends React.Component {
                       </div>
                     </div>
 
-      )}
-  />
+
+ </Default>
+
+  
      </React.Fragment>
 
 
