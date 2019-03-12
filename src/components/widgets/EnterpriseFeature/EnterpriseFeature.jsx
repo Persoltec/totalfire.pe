@@ -50,7 +50,7 @@ class EnterpriseFeature extends React.Component {
 
      <React.Fragment>
   <Media
-    query="(max-width: 600px)"
+    query="(max-width: 767px)"
     defaultMatches={device === 'mobile'}
     render={() => (
 
@@ -97,7 +97,7 @@ class EnterpriseFeature extends React.Component {
   />
 
   <Media
-    query="(min-width: 601px)"
+    query="(min-width: 768px)"
     defaultMatches={device === 'desktop'}
     render={() => (
 
