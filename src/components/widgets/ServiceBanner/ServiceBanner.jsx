@@ -138,7 +138,11 @@ class ServiceBanner extends React.Component {
               ) : (
                 <section class="widget-service-banner">
                   <div class="container">
-               <Title/>
+               <Title
+               title="EXTINTORES MULTIPROPOSITOS"
+               subtitle="VENTA Y RECARGA DE EXTINTORES EN LIMA"
+               content="Vendemos y recargamos extintores contra incendios, llenado con agente extintor garantizado."
+               />
                     {Items}
                   </div>
                 </section>
