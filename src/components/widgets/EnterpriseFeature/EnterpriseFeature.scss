@@ -1,4 +1,60 @@
+.widget-enterprise-feature.movil {
+  .media {
+    margin: 0;
+    padding: 1rem;
+    min-height: 100px;
+
+    &.rojo {
+      background: $primary;
+      color: $white-ter;
+      .title,
+      .subtitle {
+        color: $white-ter;
+      }
+      svg {
+        path {
+          fill: $white-ter;
+        }
+      }
+    }
+    &.negro {
+      background: $grey-dark;
+      color: $white-ter;
+      .title,
+      .subtitle {
+        color: $white-ter;
+      }
+      svg {
+        path {
+          fill: $white-ter;
+        }
+      }
+    }
+    &.blanco {
+      background: $white-ter;
+      color: $primary;
+      .title,
+      .subtitle {
+        color: $primary;
+      }
+      svg {
+        path {
+          fill: $primary;
+        }
+      }
+    }
+
+    .media-left {
+      svg {
+        width: 48px;
+        height: 48px;
+      }
+    }
+  }
+}
+
 .widget-enterprise-feature {
+      padding: 40px 0px;
   .tile.is-parent {
     padding: 0px;
     &.rojo {

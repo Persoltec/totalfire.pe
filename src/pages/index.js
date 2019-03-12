@@ -8,6 +8,7 @@ import EnterpriseFeature from "../components/widgets/EnterpriseFeature/Enterpris
 import ServiceList from "../components/widgets/ServiceList/ServiceList";
 import AdBar from "../components/widgets/AdBar/AdBar";
 import ServiceBanner from "../components/widgets/ServiceBanner/ServiceBanner";
+import Title from "../components/widgets/Title/Title";
 
 export default class IndexPage extends React.Component {
   constructor(props) {

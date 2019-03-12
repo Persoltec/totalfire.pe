@@ -4,7 +4,7 @@ import Img from "gatsby-image";
 import { Icon } from "react-icons-kit";
 
 import {ic_keyboard_arrow_right} from 'react-icons-kit/md/ic_keyboard_arrow_right'
-import { ic_location_on } from "react-icons-kit/md/ic_location_on";
+import {ic_settings} from 'react-icons-kit/md/ic_settings'
 import { Link } from "gatsby";
 import Title from "../Title/Title";
  
@@ -106,7 +106,7 @@ class ServiceBanner extends React.Component {
     <div class="media">
       <div class="media-left">
         <figure class="image is-32x32 has-text-primary">
-              <Icon size={24} icon={ic_location_on} />
+              <Icon size={24} icon={ic_settings} />
         </figure>
       </div>
       <div class="media-content">

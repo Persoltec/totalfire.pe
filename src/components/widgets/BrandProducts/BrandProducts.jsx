@@ -4,7 +4,7 @@ import Img from "gatsby-image";
 import { Icon } from "react-icons-kit";
 import { ic_navigate_next } from "react-icons-kit/md/ic_navigate_next";
 import { ic_navigate_before } from "react-icons-kit/md/ic_navigate_before";
-
+import Title from "../Title/Title";
 import Slider from "react-slick";
 import { valor } from "../../../tool/funciones";
 
@@ -68,13 +68,8 @@ class BrandProducts extends React.Component {
           return (
             <section class="widget-brand-products section fondo-white">
               <div class="container">
-                <div className="titulo has-text-centered">
-                  <h1 name="image" className="title">
-                    Marcas
-                  </h1>
-                  <h2 className="subtitle">{Titulo}</h2>
-                </div>
-
+               
+ <Title/>
                 <Slider {...settings}>
                   {data.allCockpitMarca.edges.map((item, i) => {
                     return (
