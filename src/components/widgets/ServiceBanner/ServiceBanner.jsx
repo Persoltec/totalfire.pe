@@ -106,11 +106,11 @@ class ServiceBanner extends React.Component {
     <div class="media">
       <div class="media-left">
         <figure class="image is-32x32 has-text-primary">
-              <Icon size={24} icon={ic_settings} />
+              <Icon className="icon gradient" size={24} icon={ic_settings} />
         </figure>
       </div>
       <div class="media-content">
-        <p class="title is-4 has-text-white">{item.node.titulo.value}</p>
+        <p class="title is-4 has-text-white has-text-weight-normal">{item.node.titulo.value}</p>
       </div>
     </div>
 

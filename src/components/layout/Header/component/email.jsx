@@ -56,8 +56,8 @@ class Mobile extends React.Component {
                                 return (
 
 <a class="top_bar_item">
-                    <span className="icon has-text-primary ">
-                      <Icon size={16} icon={ic_mail} />
+                    <span className="has-text-primary ">
+                      <Icon className="icon gradient" size={16} icon={ic_mail} />
                     </span>
                     <span>
                        {fono}

@@ -30,6 +30,23 @@ class Layout extends React.PureComponent {
        <StickyContainer className="">
 
 
+<svg class="gradient" 
+                               style={{
+position: "absolute",
+    transform: "translateX(-100%)"
+}}
+                              
+>
+ <defs >
+    <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="20px" gradientUnits="userSpaceOnUse" >
+      <stop stop-color="#ffa848" offset="0%"/>
+      <stop stop-color="#ff5f2c" offset="100%"/> 
+    </linearGradient>
+  </defs>
+ 
+</svg>
+
+
       <div id="pagina">
         <Helmet
           script={[

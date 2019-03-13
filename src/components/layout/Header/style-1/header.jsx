@@ -283,7 +283,7 @@ class Header extends React.Component {
         Total Fire se ha ganado una excelente reputación por su calidad, fiabilidad y valor dentro de la industria de la seguridad contra incendios a nivel comercial e industrial.
       </h2>
 <a class="button is-dark has-text-weight-semibold" >Contactános<Icon className="has-text-primary" size={24} icon={ic_keyboard_arrow_right} /></a>
-<a class="button is-primary gradient has-text-weight-semibold " >Brochure<Icon className="has-text-dark" size={24} icon={ic_keyboard_arrow_right} /></a>
+<a class="button is-primary gradient has-text-weight-semibold " >Brochure<Icon className="has-text-white" size={24} icon={ic_keyboard_arrow_right} /></a>
 
 
                             </div>

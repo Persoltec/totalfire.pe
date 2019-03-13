@@ -105,6 +105,9 @@ class EnterpriseFeature extends React.Component {
  <Default>
    
 <div className="widget-enterprise-feature ">
+ 
+
+
                      <Title/>
                       <div class="tile   has-text-centered">
                         <div class="tile is-horizontal">
