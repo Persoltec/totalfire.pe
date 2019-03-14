@@ -21,6 +21,9 @@ import Mobile from "../component/mobile.jsx";
 import Mail from "../component/email.jsx";
 import Portada from "../component/Portada.jsx";
 import Img from "gatsby-image";
+import { ArrowAlt } from 'react-burgers'
+
+
 
 class Header extends React.Component {
   constructor(props) {
@@ -89,7 +92,7 @@ class Header extends React.Component {
           <Menu
             isOpen={this.state.menuOpen}
             onStateChange={state => this.handleStateChange(state)}
-            right
+            left
           >
             <aside class="menu">
               <ul class="menu-list">
@@ -217,19 +220,17 @@ class Header extends React.Component {
                       <Link className="navbar-item logo" to="/">
                         <img src={logo} />
                       </Link>
-
-                      <a
-                        role="button"
-                        class="navbar-burger burger"
-                        aria-label="menu"
-                        aria-expanded="false"
-                        data-target="header"
-                        onClick={() => this.toggleMenu()}
-                      >
-                        <span aria-hidden="true" />
-                        <span aria-hidden="true" />
-                        <span aria-hidden="true" />
-                      </a>
+ 
+   <ArrowAlt
+   className="navbar-burger burger is-hidden-desktop"
+                        
+   active={this.state.menuOpen}
+   onClick={() => this.toggleMenu()}
+   width={18}
+   lineHeight={2}
+   lineSpacing={4}
+   color='#15ff'
+   padding='10px' />
                     </div>
 
                     <div
