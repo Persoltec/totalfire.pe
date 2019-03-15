@@ -43,14 +43,14 @@ class BrandProducts extends React.Component {
       <StaticQuery
         query={graphql`
           query {
-            allCockpitMarca(filter: { lang: { eq: "es" } }) {
+            allCockpitProMarcas(filter: { lang: { eq: "es" } }) {
               edges {
                 node {
                   id
                   titulo {
                     value
                   }
-                  portada {
+                  imagen {
                     value {
                       childImageSharp {
                         fluid(maxWidth: 400, quality: 50) {
@@ -71,13 +71,13 @@ class BrandProducts extends React.Component {
                
  <Title/>
                 <Slider {...settings}>
-                  {data.allCockpitMarca.edges.map((item, i) => {
+                  {data.allCockpitProMarcas.edges.map((item, i) => {
                     return (
                       <div key={i.toString()}>
                         <Img
                           style={{ width: "160px", margin: "0 auto" }}
                           sizes={
-                            valor(item.node, "portada").childImageSharp.fluid
+                            valor(item.node, "imagen").childImageSharp.fluid
                           }
                           alt={valor(item.node, "titulo")}
                         />

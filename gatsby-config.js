@@ -60,9 +60,9 @@ module.exports = {
         {
     resolve: '@fika/gatsby-source-cockpit',
     options: {
-      token: 'c2048b68adbaa67daeabc9ea930b32',
+      token: '4de1c5de905a1f15ae60422081cbb1',
       baseUrl:
-        'http://35.198.28.215/totalstopfire', // (1)
+        'http://admin.totalfire.pe', // (1)
       locales: ['any', 'es'], // (2)
     },
   },
